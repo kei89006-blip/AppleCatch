@@ -17,7 +17,7 @@ public class BasketController : MonoBehaviour
             if (Physics.Raycast(ray, out hit, Mathf.Infinity))
             {
                 float x = Mathf.RoundToInt(hit.point.x);
-                float z = Mathf.RoundToInt(hit.point.x);
+                float z = Mathf.RoundToInt(hit.point.z);
                 transform.position = new Vector3(x, 0, z);
             }
 
