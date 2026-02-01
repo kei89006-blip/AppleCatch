@@ -22,7 +22,7 @@ public class GameDirector : MonoBehaviour
     void Start()
     {
         this.timerText = GameObject.Find("Time");
-        this.pointText = GameObject.Find("point");
+        this.pointText = GameObject.Find("Point");
         this.generator = GameObject.Find("ItemGenerator");
     }
     // Update is called once per frame
