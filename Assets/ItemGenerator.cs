@@ -15,7 +15,7 @@ public class ItemGenerator : MonoBehaviour
         {
             this.delta =0;
             GameObject item;
-            int dice = Random.Range(-1,11);
+            int dice = Random.Range(1,11);
             if (dice <= this.ratio)
             {
                 item =Instantiate(bombPrefab);
