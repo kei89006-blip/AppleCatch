@@ -7,6 +7,13 @@ public class BasketController : MonoBehaviour
     {
         Application.targetFrameRate =60;
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("キャッチ！");
+        Destroy(other.gameObject);
+    }
+    
     void Update()
     {
         if (Mouse.current.leftButton.wasPressedThisFrame)
